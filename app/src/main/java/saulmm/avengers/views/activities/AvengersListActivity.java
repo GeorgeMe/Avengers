@@ -15,15 +15,11 @@ import android.support.v7.widget.RecyclerView.OnScrollListener;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ProgressBar;
 import android.widget.TextView;
-
-import java.util.List;
-
-import javax.inject.Inject;
-
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import java.util.List;
+import javax.inject.Inject;
 import saulmm.avengers.AvengersApplication;
 import saulmm.avengers.R;
 import saulmm.avengers.injector.components.DaggerAvengersComponent;
@@ -42,7 +38,7 @@ public class AvengersListActivity extends AppCompatActivity
 
     @InjectView(R.id.activity_avengers_recycler)        RecyclerView mAvengersRecycler;
     @InjectView(R.id.activity_avengers_toolbar)         Toolbar mAvengersToolbar;
-    @InjectView(R.id.activity_avengers_progress)        ProgressBar mAvengersProgress;
+    //@InjectView(R.id.activity_avengers_progress)        ProgressBar mAvengersProgress;
     @InjectView(R.id.activity_avengers_empty_indicator) View mEmptyIndicator;
     @InjectView(R.id.activity_avengers_error_view)      View mErrorView;
     @InjectView(R.id.activity_avenger_title)            TextView mAvengersActivityTitle;
@@ -116,25 +112,25 @@ public class AvengersListActivity extends AppCompatActivity
     @Override
     public void showLoadingIndicator() {
 
-        mAvengersProgress.setVisibility(View.VISIBLE);
+        //mAvengersProgress.setVisibility(View.VISIBLE);
     }
 
     @Override
     public void hideLoadingIndicator() {
 
-        mAvengersProgress.setVisibility(View.GONE);
+        //mAvengersProgress.setVisibility(View.GONE);
     }
 
     @Override
     public void showLoadingView() {
 
-        mEmptyIndicator.setVisibility(View.VISIBLE);
+        //mEmptyIndicator.setVisibility(View.VISIBLE);
     }
 
     @Override
     public void hideLoadingView() {
 
-        mEmptyIndicator.setVisibility(View.GONE);
+    //    mEmptyIndicator.setVisibility(View.GONE);
     }
 
     @Override
@@ -203,4 +199,6 @@ public class AvengersListActivity extends AppCompatActivity
             }
         }
     };
+
+
 }
