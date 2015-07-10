@@ -40,14 +40,14 @@
 					android:layout_width="match_parent"
 					android:layout_height="?attr/actionBarSize"
 					android:background="#ED031A"
-					app:theme="@style/ThemeOverlay.AppCompat.Dark"
-					app:title="Amazing heroes of marvel"
+					app:layout_collapseMode="pin"
 					>
 
 					<LinearLayout
 						android:layout_width="match_parent"
 						android:layout_height="match_parent"
 						android:orientation="horizontal"
+
 						>
 
 						<TextView
@@ -57,15 +57,14 @@
 							android:layout_gravity="center_vertical"
 							android:text="Amazing heroes of "
 							android:textColor="#FFF"
-							android:visibility="gone"
 							android:textSize="22sp"
 							/>
 
 						<ImageView
 							android:layout_width="wrap_content"
 							android:layout_height="30dp"
-							android:visibility="gone"
 							android:layout_marginLeft="@dimen/spacing_small"
+							android:layout_gravity="center_vertical"
 							android:scaleType="fitStart"
 							android:src="@drawable/marvel"
 							/>

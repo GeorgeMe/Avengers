@@ -80,7 +80,6 @@ public class AvengerDetailActivity extends AppCompatActivity implements Avengers
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setDisplayShowTitleEnabled(false);
         }
-
     }
 
     private void initializePresenter() {
